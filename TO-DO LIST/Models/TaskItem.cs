@@ -14,5 +14,10 @@ namespace TO_DO_LIST.Models
         public string Priority { get; set; } 
 
         public string Status { get; set; }
+
+        public static implicit operator string(TaskItem v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
