@@ -19,7 +19,7 @@ namespace TO_DO_LIST.Controllers
 
         [HttpGet]
         public ActionResult<ApiResponse<IEnumerable<TaskItem>>> GetAllTasks(
-            string status, int? priority, DateTime? dueDate)
+            string? status, int? priority, DateTime? dueDate)
         {
             var response = _taskItemService.GetAllTasks(status, priority, dueDate);
             if (!response.Success)

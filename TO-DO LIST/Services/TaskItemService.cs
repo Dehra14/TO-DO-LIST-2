@@ -13,7 +13,7 @@ namespace TO_DO_LIST.Services
             _repository = repository;
             _logger = logger;
         }
-        public ApiResponse<IEnumerable<TaskItem>> GetAllTasks(string status, int? priority, DateTime? dueDate)
+        public ApiResponse<IEnumerable<TaskItem>> GetAllTasks(string? status, int? priority, DateTime? dueDate)
         {
             try
             {
